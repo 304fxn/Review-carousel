@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: #eee;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  margin: 3rem 0 5rem;
+}
+
+.title h1 {
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .title h1 {
+    font-size: 2em;
+  }
+}
+
+.title .mini-line {
+  width: 6rem;
+  height: 0.25rem;
+  background-color: #008cff;
+  margin: 1rem auto;
+}
+
+#main {
+  max-width: 550px;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #main {
+    max-width: 70%;
+  }
+}
+
+#main img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+}
+
+#main .name {
+  letter-spacing: 2px;
+  margin-top: 1rem;
+  font-size: 1.15rem;
+}
+
+#main .job {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  color: #008cff;
+}
+
+#main .desc {
+  line-height: 1.4;
+}
+
+#main .viewbuttons {
+  margin: 1rem 0;
+}
+
+#main .viewbuttons .back,
+#main .viewbuttons .next {
+  color: #008cff;
+  font-size: 1.25rem;
+  background: #fff;
+  margin: 0 1rem;
+}
+
+#main .surprise-me {
+  color: #008cff;
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #008cff;
+  padding: 0.25rem 0.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
